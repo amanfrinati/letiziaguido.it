@@ -1,0 +1,15 @@
+@import "~bootstrap";
+
+@font-face {
+  font-family: "Silver South Serif";
+  src: url("./assets/Silver\ South\ Serif.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Silver South Script";
+  src: url("./assets/Silver\ South\ Script.ttf") format("ttf");
+}
+
+h1 {
+  font-family: "Silver South Script";
+}
