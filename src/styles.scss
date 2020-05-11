@@ -2,14 +2,27 @@
 
 @font-face {
   font-family: "Silver South Serif";
-  src: url("./assets/Silver\ South\ Serif.ttf") format("ttf");
+  src: url("./assets/fonts/SilverSouthSerif.woff2") format("woff2"),
+    url("./assets/fonts/SilverSouthSerif.woff") format("woff"),
+    url("./assets/fonts/SilverSouthSerif.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Silver South Script";
-  src: url("./assets/Silver\ South\ Script.ttf") format("ttf");
+  src: url("./assets/fonts/SilverSouthScript.woff2") format("woff2"),
+    url("./assets/fonts/SilverSouthScript.woff") format("woff"),
+    url("./assets/fonts/SilverSouthScript.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1 {
-  font-family: "Silver South Script";
+h1,
+.h1 {
+  font-family: "Silver South Serif";
+}
+
+section {
+  height: 100vh;
 }

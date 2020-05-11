@@ -32,10 +32,4 @@ module.exports = {
       },
     ],
   },
-  plugin: [
-    new CleanWebpackPlugin(),
-    new CopyPlugin({
-      patterns: [{ from: "src", to: "dist" }],
-    }),
-  ],
 };
