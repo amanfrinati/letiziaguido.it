@@ -32,4 +32,14 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new CopyPlugin([
+      { from: "src/assets/images", to: "images" },
+      {
+        from: "src/index.html",
+        to: "index.html",
+      },
+    ]),
+  ],
 };
