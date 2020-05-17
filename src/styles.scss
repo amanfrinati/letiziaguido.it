@@ -33,9 +33,23 @@ section {
   background: white;
 }
 
+p {
+  margin: 0;
+  font-weight: 600;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 2rem;
+  }
+}
+
 .script {
   font-family: "Silver South Script";
   font-size: 3rem;
+  font-weight: 400;
   color: $secondary;
 
   @include media-breakpoint-up(md) {
@@ -67,31 +81,48 @@ section {
   }
 }
 
-.and {
-  max-width: 25px;
+.names {
+  min-height: 200px;
+}
+
+.guido {
+  max-width: 140px;
 
   @include media-breakpoint-up(md) {
-    max-width: 50px;
+    max-width: 250px;
   }
 }
 
-.quote {
-  text-align: center;
+.and {
+  max-width: 25px;
+  margin: 0 1rem;
 
-  p {
-    margin: 0;
+  @include media-breakpoint-up(md) {
+    max-width: 50px;
+    margin: 0 3rem;
+  }
+}
 
-    @include media-breakpoint-up(md) {
-      font-size: 1.5rem;
-    }
+.letizia {
+  max-width: 140px;
 
-    @include media-breakpoint-up(lg) {
-      font-size: 2rem;
-    }
+  @include media-breakpoint-up(md) {
+    max-width: 250px;
+  }
+}
+
+.wedding-date {
+  max-width: 75%;
+  margin: 2rem auto;
+
+  @include media-breakpoint-up(md) {
+    max-width: 50%;
+    margin: 3rem auto;
   }
 }
 
 .double-quote {
+  transform: rotate(180deg);
   padding: 1rem 0;
   max-width: 25px;
 
