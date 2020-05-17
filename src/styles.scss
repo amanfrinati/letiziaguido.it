@@ -37,6 +37,14 @@ section {
   font-family: "Silver South Script";
   font-size: 3rem;
   color: $secondary;
+
+  @include media-breakpoint-up(md) {
+    font-size: 4rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 5rem;
+  }
 }
 
 .logo {
@@ -72,6 +80,14 @@ section {
 
   p {
     margin: 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+    }
   }
 }
 
