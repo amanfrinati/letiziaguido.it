@@ -18,15 +18,104 @@
   font-style: normal;
 }
 
-h1,
-.h1 {
+$primary: #0f4881;
+$secondary: #548cc5;
+
+body {
   font-family: "Silver South Serif";
+  color: $primary;
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 2rem;
+  background: white;
+}
+
+.script {
+  font-family: "Silver South Script";
+  font-size: 3rem;
+  color: $secondary;
 }
 
 .logo {
-  max-width: 200px;
+  padding: 5rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 7rem 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 10rem 0;
+  }
+
+  img {
+    max-width: 100px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 200px;
+    }
+  }
+}
+
+.and {
+  max-width: 25px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 50px;
+  }
+}
+
+.quote {
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.double-quote {
+  padding: 1rem 0;
+  max-width: 25px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 50px;
+  }
+}
+
+.resource_1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 17%;
+
+  @include media-breakpoint-up(md) {
+    // max-width: 50px;
+  }
+}
+
+.resource_2 {
+  position: absolute;
+  bottom: 0;
+  width: 15%;
+  left: -25px;
+
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    bottom: -250px;
+    width: 11%;
+    left: -52px;
+  }
+}
+
+.resource_3 {
+  position: absolute;
+  top: 199px;
+  width: 42%;
+  left: -76px;
+
+  @include media-breakpoint-up(md) {
+    // max-width: 50px;
+  }
 }
