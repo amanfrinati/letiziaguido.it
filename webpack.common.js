@@ -27,6 +27,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin([
       { from: "src/assets/images", to: "images" },
+      { from: "src/assets/icons", to: "icons" },
+      { from: "src/assets/site.webmanifest", to: "site.webmanifest" },
       {
         from: "src/index.html",
         to: "index.html",
