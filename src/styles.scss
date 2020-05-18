@@ -18,11 +18,13 @@
   font-style: normal;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
 $primary: #0f4881;
 $secondary: #548cc5;
 
 body {
-  font-family: "Silver South Serif";
+  font-family: "Silver South Serif", serif;
   color: $primary;
 }
 
@@ -47,14 +49,10 @@ p {
 }
 
 p.script {
-  font-family: "Silver South Script";
-  font-size: 5rem;
+  font-family: "Silver South Script", serif;
+  font-size: 4rem;
   font-weight: 400;
   color: $secondary;
-
-  @include media-breakpoint-up(md) {
-    font-size: 4rem;
-  }
 
   @include media-breakpoint-up(lg) {
     font-size: 5rem;
@@ -139,23 +137,27 @@ p.script {
   }
 }
 
+.contribution {
+  text-align: center;
+
+  & > p {
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.iban {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .iframe-container {
   // overflow: hidden;
   // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
   // padding-top: 400%;
   position: relative;
-
-  // @include media-breakpoint-up(sm) {
-  //   padding-top: 400%;
-  // }
-
-  // @include media-breakpoint-up(md) {
-  //   padding-top: 400%;
-  // }
-
-  // @include media-breakpoint-up(lg) {
-  //   padding-top: 45%;
-  // }
 
   iframe {
     // border: 0;
