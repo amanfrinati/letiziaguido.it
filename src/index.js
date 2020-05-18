@@ -1,8 +1,10 @@
-import "jquery";
+import jQuery from "jquery";
 import "popper.js";
 import "bootstrap";
 import Rellax from "rellax";
 
 import "./styles.scss";
 
-const rellax = new Rellax(".rellax");
+jQuery().ready(() => {
+  const rellax = new Rellax(".rellax");
+});
