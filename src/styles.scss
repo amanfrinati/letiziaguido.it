@@ -243,6 +243,7 @@ p.script {
 
   @include media-breakpoint-up(xs) {
     width: 16%;
+    right: 3px;
     // max-width: 50px;
   }
 }
@@ -261,15 +262,46 @@ p.script {
   left: 0;
 }
 
+.resource_17 {
+  position: absolute;
+  width: 36%;
+
+  @include media-breakpoint-up(md) {
+    width: 20%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 10%;
+  }
+}
+
+.resource_20 {
+  position: absolute;
+  width: 10%;
+  left: 0;
+}
+
+.resource_21 {
+  position: absolute;
+  width: 90%;
+
+  @include media-breakpoint-up(xs) {
+    width: 70%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 30%;
+  }
+}
+
 .resource_28 {
   position: absolute;
   bottom: 6px;
   width: 10%;
-  right: -20px;
+  right: -30px;
 
   @include media-breakpoint-up(xs) {
-    right: -33px;
+    right: 2px;
     width: 7%;
-    // max-width: 50px;
   }
 }
